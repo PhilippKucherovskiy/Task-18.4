@@ -23,7 +23,8 @@ namespace Task_18._4.Command_Types
         public async Task ExecuteAsync()
         {
             var videos = new YoutubeClient();
-            ///не работает метод GetAsyn()\GetVideoAsync() объяснений нет///
+            ///не работает метод GetAsyn()\GetVideoAsync() объяснений нет////
+            /
             
             _video = await videos.GetAsync(_videoUrl);
             Console.WriteLine($"Название видео: {_video.Title}");
